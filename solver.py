@@ -24,7 +24,14 @@ def is_valid(b, r, c, value): #board, row, column, value for that position
             return False
 
     #check 3by 3 squares
-    #implement
+    rs = r//3       #divide the row by 3 and get 0, 1 or 2 witch multiplied by 3 are the starting rows of every square
+                    # ex: 5//3 = 1. now 1*3 = 3 witch is the start of the second square and that is where row 5 is
+    cs = c//3       #same as above for columns
+
+    for i in range(rs*3, rs*3+3):
+        for j in range(cs*3, cs*3+3):
+            if(b[i][j] == value):
+                return False
 
     #didn't faill any test
     return True
