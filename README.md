@@ -2,7 +2,7 @@
 
 Hi, 
 
-this is a simple sudoku solver in python that I made while experimenting with recursion in python and back tracking.
+this is a simple sudoku solver in python that I made while experimenting with recursion in python and backtracking.
 
 By implementing the 3 by 3 verification and not only the rows and columns. The solve function was called 92 times to solve the example grid instead of 112 times.
 
